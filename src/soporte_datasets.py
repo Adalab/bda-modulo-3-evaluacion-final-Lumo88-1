@@ -18,6 +18,7 @@ def dato_a_int(valor):
         return valor
     
 def nulos_false_int(df):
+    '''Función que le recibe una columna y rellena los nulos por "False" y aplica la función dato_a_int'''
     df = df.fillna("False")
     df= df.apply(dato_a_int)
     
@@ -26,6 +27,7 @@ def nulos_false_int(df):
 #Funciones para el análisis de los datos
 
 def detectar_outliers_iqr(df, columna):
+    '''Función que calcula los quartiles para calcular el IQR y sacar los límites y el número de outliers'''
     q1 = df[columna].quantile(0.25)
     q3 = df[columna].quantile(0.75)
     iqr = q3 - q1
