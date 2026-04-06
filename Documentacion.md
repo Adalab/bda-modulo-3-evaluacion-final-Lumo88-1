@@ -76,8 +76,8 @@ Se analiza la presencia de valores nulos en cada dataset.
 
 - Para el `df_loyalty`, presenta valores nulos en tres columnas:
 
-    - `Salary`con un 25.32%
-    - `Cancellation Year` y `Cancellation Month` con un 87.65%
+    - `Salary`con un 25.32%, habrá que analizar y buscar patrones para decidir qué hacer.
+    - `Cancellation Year` y `Cancellation Month` con un 87.65%, esto no es alarmante ya que los nulos significan que el cliente sigue estando dado de alta.
 
 ### Duplicados
 Se comprueba si existen registros duplicados que puedan afectar al análisis.
