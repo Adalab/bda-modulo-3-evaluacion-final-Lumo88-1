@@ -23,4 +23,15 @@ def nulos_false_int(df):
     
     return df
 
+#Funciones para el análisis de los datos
+
+def detectar_outliers_iqr(df, columna):
+    q1 = df[columna].quantile(0.25)
+    q3 = df[columna].quantile(0.75)
+    iqr = q3 - q1
+    limite_superior = q3 + 1.5 * iqr
+    limite_inferior = q1 - 1.5 * iqr
+    
+    outliers = df[(df[columna] > limite_superior) | (df[columna] < limite_inferior)]
+    return limite_superior, len(outliers)
     
