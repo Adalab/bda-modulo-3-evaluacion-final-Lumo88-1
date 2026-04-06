@@ -10,15 +10,12 @@ Variables:
 - `Loyalty Number`: Identificador único del cliente.
 - `Year`, `Month`: Año, mes del vuelo.
 - `Flights Booked`: Números totales de vuelos reservados en el mes.
-- `Distance`: Distancia volada.
-- `Points Accumulated`: Puntos ganados.
+- `Points Accumulated`: Puntos acumulados por el cliente.
 - `Points Redeemed`: Puntos usados.
 - `Flights with Companions`: Número de vuelos con acompañantes.
 - `Total Flights`: Número total de vuelos que el cliente ha realizado.
-- `Distance`: La distancia total durante el mes.
-- `Points Accumulated`: Puntos acumulados por el cliente.
-- `Points Redeemed`: Puntos que el cliente ha redimido en el mes.
-- `Dollar Cost Points Redeemed`: El valor en dólares de los puntos redimidos.
+- `Distance`: La distancia volada total durante el mes.
+- `Dollar Cost Points Redeemed`: El valor en dólares de los puntos usados.
 
 ## Dataset 2: Customer Loyalty History
 Contiene un perfil detallado de los clientes.
