@@ -32,6 +32,7 @@ def detectar_outliers_iqr(df, columna):
     limite_superior = q3 + 1.5 * iqr
     limite_inferior = q1 - 1.5 * iqr
     
-    outliers = df[(df[columna] > limite_superior) | (df[columna] < limite_inferior)]
-    return limite_superior, len(outliers)
+    #hago la máscara y digo que me saque un df con los outliers, luego le hago un len y devuelvo la cantidad de ellos.
+    outliers = df[(df[columna] > limite_superior) | (df[columna] < limite_inferior)] 
+    return limite_superior, limite_inferior, len(outliers)
     
